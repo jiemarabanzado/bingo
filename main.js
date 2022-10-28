@@ -174,6 +174,7 @@ let TableCount = [];
 let NewNum = 0;
 document.getElementById('extract').addEventListener('click', function () {
     let compare = document.querySelectorAll('.cpu-number');
+    let check1 = document.querySelectorAll('.Number1');
     let Here = true;
     while (Here) {
         const a = parseInt(Math.random() * (51 - 1) + 1);
@@ -185,8 +186,14 @@ document.getElementById('extract').addEventListener('click', function () {
                 if (a == compare[index].innerHTML) {
                     compare[index].classList.add('checked');
                 }
-
+            }
+            for (let index = 0; index < check1.length; index++) {
+                if (a == check1[index].innerHTML) {
+                    check1[index].classList.add('had');
+                }
             }
         }
     }
 })
+
+//numeri giocatore
