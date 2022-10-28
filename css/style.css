@@ -94,9 +94,35 @@ header{
 }
 #num-table{
     max-width: 700px;
-    margin: auto;
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 5px;
+    padding-bottom: 0px;
+    margin-bottom: 20px;
 }
-#cpu-number{
-    width: calc(100/10 - 10px);
+.cpu-number{
+    width: calc(100%/10 - 5px);
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+#cpu{
+    display: none;
+}
+#confirm{
+    display: none;
+    margin-bottom: 10px;
+}
+#begin{
+    font-size: 2rem;
+}
+#last-number{
+    font-size: 4rem;
+    text-align: center;
+}
+.last{
+    margin-right: 10px;
 }

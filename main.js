@@ -34,74 +34,108 @@ for (let index = 0; index < card4.length; index++) {
 document.getElementById('play1').addEventListener('click',function(){
     active[0].classList.add('active');
     document.getElementById('player-selection').style.display='none';
+    document.getElementById('confirm').style.display='block';
     })
 document.getElementById('play2').addEventListener('click',function(){
     active[1].classList.add('active');
     document.getElementById('player-selection').style.display='none';
+    document.getElementById('confirm').style.display='block';
 })
 document.getElementById('play3').addEventListener('click',function(){
     active[2].classList.add('active');
     document.getElementById('player-selection').style.display='none';
+    document.getElementById('confirm').style.display='block';
 })
 document.getElementById('play4').addEventListener('click',function(){
     active[3].classList.add('active');
     document.getElementById('player-selection').style.display='none';
+    document.getElementById('confirm').style.display='block';
 })
 
              //scelta nomi
 //one player
 document.getElementById('chose-name1').addEventListener('click',function(){
     let scelta1=document.getElementById('name1').value;
-    console.log(scelta1);
-    document.getElementById('p1-name').innerHTML=scelta1;
+    if(scelta1==''){
+        alert('inserisci nome');
+    }else{
+        document.getElementById('p1-name').innerHTML=scelta1;
+    }          
 })
 //two players
 document.getElementById('chose-name1-2').addEventListener('click',function(){
     let scelta1=document.getElementById('name1-2').value;
-    console.log(scelta1);
-    document.getElementById('p1-2-name').innerHTML=scelta1;
+    if(scelta1==''){
+        alert('inserisci nome');
+    }else{
+        document.getElementById('p1-2-name').innerHTML=scelta1;
+    } 
 })     
 document.getElementById('chose-name2').addEventListener('click',function(){
     let scelta1=document.getElementById('name2').value;
-    console.log(scelta1);
-    document.getElementById('p2-name').innerHTML=scelta1;
+    if(scelta1==''){
+        alert('inserisci nome');
+    }else{
+        document.getElementById('p2-name').innerHTML=scelta1;
+    } 
 })      
 //three player
 document.getElementById('chose-name1-3').addEventListener('click',function(){
     let scelta1=document.getElementById('name1-3').value;
-    console.log(scelta1);
-    document.getElementById('p1-3-name').innerHTML=scelta1;
+    if(scelta1==''){
+        alert('inserisci nome');
+    }else{
+        document.getElementById('p1-3-name').innerHTML=scelta1;
+    } 
 })  
 document.getElementById('chose-name2-3').addEventListener('click',function(){
     let scelta1=document.getElementById('name2-3').value;
-    console.log(scelta1);
-    document.getElementById('p2-3-name').innerHTML=scelta1;
+    if(scelta1==''){
+        alert('inserisci nome');
+    }else{
+        document.getElementById('p2-3-name').innerHTML=scelta1;
+    } 
 })  
 document.getElementById('chose-name3').addEventListener('click',function(){
     let scelta1=document.getElementById('name3').value;
-    console.log(scelta1);
-    document.getElementById('p3-name').innerHTML=scelta1;
+    if(scelta1==''){
+        alert('inserisci nome');
+    }else{
+        document.getElementById('p3-name').innerHTML=scelta1;
+    } 
 })  
 //four player
 document.getElementById('chose-name1-4').addEventListener('click',function(){
     let scelta1=document.getElementById('name1-4').value;
-    console.log(scelta1);
-    document.getElementById('p1-4-name').innerHTML=scelta1;
+    if(scelta1==''){
+        alert('inserisci nome');
+    }else{
+        document.getElementById('p1-4-name').innerHTML=scelta1;
+    } 
 })  
 document.getElementById('chose-name2-4').addEventListener('click',function(){
     let scelta1=document.getElementById('name2-4').value;
-    console.log(scelta1);
-    document.getElementById('p2-4-name').innerHTML=scelta1;
+    if(scelta1==''){
+        alert('inserisci nome');
+    }else{
+        document.getElementById('p2-4-name').innerHTML=scelta1;
+    } 
 })  
 document.getElementById('chose-name3-4').addEventListener('click',function(){
     let scelta1=document.getElementById('name3-4').value;
-    console.log(scelta1);
-    document.getElementById('p3-4-name').innerHTML=scelta1;
+    if(scelta1==''){
+        alert('inserisci nome');
+    }else{
+        document.getElementById('p3-4-name').innerHTML=scelta1;
+    } 
 })  
 document.getElementById('chose-name4').addEventListener('click',function(){
     let scelta1=document.getElementById('name4').value;
-    console.log(scelta1);
-    document.getElementById('p4-name').innerHTML=scelta1;
+    if(scelta1==''){
+        alert('inserisci nome');
+    }else{
+        document.getElementById('p4-name').innerHTML=scelta1;
+    } 
 })  
 
 
@@ -109,7 +143,34 @@ document.getElementById('chose-name4').addEventListener('click',function(){
 //generazione tabella numeri usciti
 let NumTable=[];
 NumTable[0]=1;
-for (let index = 1; index <= NumTable.length; index++) {
+for (let index = 1; index < 50; index++) {
     NumTable[index]=NumTable[index-1]+1;
 }
-console.log(NumTable);
+
+for (let index =0 ; index < 50; index++) {
+    document.getElementById('num-table').innerHTML+=`<div class="cpu-number">${NumTable[index]}</div>`;
+    console.log(NumTable[index]);
+}
+
+//controllo inizio partita
+//1player
+document.getElementById('begin').addEventListener('click',function(){
+    document.getElementById('cpu').style.display='block';
+    document.getElementById('begin').style.display='none';
+})
+ 
+
+//sistema conteggio numeri
+let TableCount=[];
+let NewNum=0;
+document.getElementById('extract').addEventListener('click',function(){
+    let Here=true;
+    while(Here){
+    const a = parseInt(Math.random() * (51-1) + 1);
+    if(TableCount.includes(a)==false){
+        TableCount.push(a);
+        console.log(a);
+        Here=false;
+    }
+}
+})

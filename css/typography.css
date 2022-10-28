@@ -52,3 +52,9 @@ button:hover{
 
 }
 
+#num-table{
+    background-color: bisque;
+}
+.cpu-number{
+    background-color: white;
+}
