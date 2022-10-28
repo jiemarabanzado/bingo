@@ -3,6 +3,49 @@ const card2=[2,5,11,15,22,27,32,38,43,41];
 const card3=[7,6,16,14,23,26,33,36,44,48];
 const card4=[8,1,12,19,24,25,34,35,49,50];
 let active=document.querySelectorAll('.n-players');
+//creazione cards
+//1 player
+for (let index = 0; index < card1.length; index++) {
+    document.getElementById('p1-card').innerHTML+=`<div class="Number1">${card1[index]}</div>`;}
+//2player
+for (let index = 0; index < card1.length; index++) {
+    document.getElementById('p1-2-card').innerHTML+=`<div class="Number1">${card1[index]}</div>`;}
+for (let index = 0; index < card2.length; index++) {
+        document.getElementById('p2-card').innerHTML+=`<div class="Number1">${card2[index]}</div>`;}
+//scelta del numero partecipanti
 document.getElementById('play1').addEventListener('click',function(){
     active[0].classList.add('active');
+    document.getElementById('player-selection').style.display='none';
+    })
+document.getElementById('play2').addEventListener('click',function(){
+    active[1].classList.add('active');
+    document.getElementById('player-selection').style.display='none';
 })
+document.getElementById('play3').addEventListener('click',function(){
+    active[2].classList.add('active');
+    document.getElementById('player-selection').style.display='none';
+})
+document.getElementById('play4').addEventListener('click',function(){
+    active[3].classList.add('active');
+    document.getElementById('player-selection').style.display='none';
+})
+//scelta nomi
+//one player
+document.getElementById('chose-name1').addEventListener('click',function(){
+    let scelta1=document.getElementById('name1').value;
+    console.log(scelta1);
+    document.getElementById('p1-name').innerHTML=scelta1;
+})
+//two players
+document.getElementById('chose-name1-2').addEventListener('click',function(){
+    let scelta1=document.getElementById('name1-2').value;
+    console.log(scelta1);
+    document.getElementById('p1-2-name').innerHTML=scelta1;
+})     
+document.getElementById('chose-name2').addEventListener('click',function(){
+    let scelta1=document.getElementById('name2').value;
+    console.log(scelta1);
+    document.getElementById('p2-name').innerHTML=scelta1;
+})      
+
+
