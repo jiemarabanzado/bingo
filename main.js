@@ -197,7 +197,7 @@ document.getElementById('extract').addEventListener('click', function () {
             for (let index = 0; index < compare.length; index++) {
                 if (a == compare[index].innerHTML) {
                     compare[index].classList.add('checked');
-                    
+                     
                 }
             }
 
