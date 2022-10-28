@@ -92,3 +92,11 @@ header{
 .p1,.p2,.p3,.p4{
     margin-bottom: 30px;
 }
+#num-table{
+    max-width: 700px;
+    margin: auto;
+    display: flex;
+}
+#cpu-number{
+    width: calc(100/10 - 10px);
+}

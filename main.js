@@ -103,3 +103,13 @@ document.getElementById('chose-name4').addEventListener('click',function(){
     console.log(scelta1);
     document.getElementById('p4-name').innerHTML=scelta1;
 })  
+
+
+
+//generazione tabella numeri usciti
+let NumTable=[];
+NumTable[0]=1;
+for (let index = 1; index <= NumTable.length; index++) {
+    NumTable[index]=NumTable[index-1]+1;
+}
+console.log(NumTable);
