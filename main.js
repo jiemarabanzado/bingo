@@ -29,7 +29,7 @@ document.getElementById('play2').addEventListener('click', function () {
     document.getElementById('player-selection').style.display = 'none';
     document.getElementById('confirm').style.display = 'block';
     for (let index = 0; index < card1.length; index++) {
-        document.getElementById('p1-2-card').innerHTML += `<div class="Number2">${card1[index]}</div>`;
+        document.getElementById('p1-2-card').innerHTML += `<div class="Number1">${card1[index]}</div>`;
     }
     for (let index = 0; index < card2.length; index++) {
         document.getElementById('p2-card').innerHTML += `<div class="Number2">${card2[index]}</div>`;
