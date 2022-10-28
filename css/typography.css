@@ -58,3 +58,6 @@ button:hover{
 .cpu-number{
     background-color: white;
 }
+.checked{
+    background-color: bisque;
+}
