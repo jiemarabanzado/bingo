@@ -16,3 +16,71 @@ header{
     display: flex;
     justify-content: center;
 }
+.n-players{
+    display: none;
+}    
+.active{
+    display: block;
+}
+.players{
+    max-width: 1300px;
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+/*player 1*/
+.p1-card{
+    max-width: 400px;
+    padding: 5px;
+    margin: auto;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.Number1{
+    width: calc(100%/5 - 10px);
+    padding: 5px;
+    margin-bottom: 5px;
+}
+/*player 2*/
+.p2-card{
+    max-width: 400px;
+    padding: 5px;
+    margin: auto;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.Number2{
+    width: calc(100%/5 - 10px);
+    padding: 5px;
+    margin-bottom: 5px;
+}
+/*player 3*/
+.p3-card{
+    max-width: 400px;
+    padding: 5px;
+    margin: auto;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.Number3{
+    width: calc(100%/5 - 10px);
+    padding: 5px;
+    margin-bottom: 5px;
+}
+/*player 4*/
+.p4-card{
+    max-width: 400px;
+    padding: 5px;
+    margin: auto;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.Number4{
+    width: calc(100%/5 - 10px);
+    padding: 5px;
+    margin-bottom: 5px;
+}
+.p1,.p2,.p3,.p4{
+    margin-bottom: 30px;
+}
