@@ -1,0 +1,12 @@
+#title{
+    font-size: 3rem;
+}
+
+.players{
+    list-style: none;
+    margin: 10px;
+    cursor: pointer;
+}
+.players:hover{
+    text-decoration: underline;
+}

@@ -1,0 +1,18 @@
+@import url(typography.css);
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.container{
+    max-width: 1100px;
+    text-align: center;
+    margin: auto;
+}
+header{
+    margin-bottom: 50px;
+}
+.ms-row{
+    display: flex;
+    justify-content: center;
+}
