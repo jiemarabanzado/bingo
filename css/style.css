@@ -30,7 +30,7 @@ header{
     flex-wrap: wrap;
 }
 /*player 1*/
-#p1-card,#p1-2-card{
+#p1-card,#p1-2-card,#p1-3-card,#p1-4-card{
     max-width: 400px;
     padding: 5px;
     margin: auto;
@@ -45,7 +45,7 @@ header{
     margin-bottom: 5px;
 }
 /*player 2*/
-#p2-card{
+#p2-card,#p2-3-card,#p2-4-card{
     max-width: 400px;
     padding: 5px;
     margin: auto;
@@ -60,7 +60,7 @@ header{
     margin-bottom: 5px;
 }
 /*player 3*/
-.p3-card{
+#p3-card,#p3-4-card{
     max-width: 400px;
     padding: 5px;
     margin: auto;
@@ -75,7 +75,7 @@ header{
     margin-bottom: 5px;
 }
 /*player 4*/
-.p4-card{
+#p4-card{
     max-width: 400px;
     padding: 5px;
     margin: auto;
