@@ -175,6 +175,9 @@ let NewNum = 0;
 document.getElementById('extract').addEventListener('click', function () {
     let compare = document.querySelectorAll('.cpu-number');
     let check1 = document.querySelectorAll('.Number1');
+    let check2 = document.querySelectorAll('.Number2');
+    let check3 = document.querySelectorAll('.Number3');
+    let check4 = document.querySelectorAll('.Number4');
     let Here = true;
     while (Here) {
         const a = parseInt(Math.random() * (51 - 1) + 1);
@@ -192,8 +195,22 @@ document.getElementById('extract').addEventListener('click', function () {
                     check1[index].classList.add('had');
                 }
             }
+            for (let index = 0; index < check2.length; index++) {
+                if (a == check2[index].innerHTML) {
+                    check2[index].classList.add('had');
+                }
+            }
+            for (let index = 0; index < check3.length; index++) {
+                if (a == check3[index].innerHTML) {
+                    check3[index].classList.add('had');
+                }
+            }
+            for (let index = 0; index < check4.length; index++) {
+                if (a == check4[index].innerHTML) {
+                    check4[index].classList.add('had');
+                }
+            }
         }
     }
 })
 
-//numeri giocatore
