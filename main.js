@@ -4,8 +4,38 @@ const card3 = [7, 6, 16, 14, 23, 26, 33, 36, 44, 48];
 const card4 = [8, 1, 12, 19, 24, 25, 34, 35, 49, 50];
 let active = document.querySelectorAll('.n-players');
 let GameSelected=0;
-//creazione cards
+//creazione cards random
 //1 player
+let new1;
+let cambia;
+let Change;
+let isNew=true //parseInt(Math.random() * (51 - 1) + 1);
+document.getElementById('gen1-btn').addEventListener('click',function(){
+    let ControlNew1=[];
+    let cambia=document.querySelectorAll('.Number1');
+    console.log(cambia);
+    for (let index = 0; index< cambia.length; index++) {
+        isNew=true;
+        if(index==0){
+            Change=parseInt(Math.random() * (51 - 1) + 1);
+            cambia[index].innerHTML=Change;
+            ControlNew1.push(Change);
+            console.log(ControlNew1);
+        }else{
+            while(isNew){
+                Change=parseInt(Math.random() * (51 - 1) + 1);
+                if(ControlNew1.includes(Change)){
+                    isNew=true
+                }else{
+                    cambia[index].innerHTML=Change;
+                    ControlNew1.push(Change);
+                    console.log(ControlNew1)
+                    isNew=false;
+                }       
+            }
+        }       
+    }
+})
 
 //2player
 
