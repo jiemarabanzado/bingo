@@ -64,3 +64,17 @@ button:hover{
 .had{
     background-color: lightblue;
 }
+#chose-name1, #chose-name1-2, #chose-name1-3, #chose-name1-4,
+#chose-name2, #chose-name3, #chose-name4, #chose-name2-3,
+#chose-name2-4,#chose-name3-4,#chose-name4{
+    background-color: transparent;
+}
+#play1,#play2,#play3,#play4{
+    font-size: 1.2rem
+}
+#play1:hover{
+    color:indianred;
+}
+#play2:hover{
+    color:blueviolet;
+}
