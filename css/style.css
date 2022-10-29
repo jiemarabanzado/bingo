@@ -140,3 +140,11 @@ header{
     color:goldenrod;
     padding-top: 50px;
 }
+#play-again{
+    font-size: 0.8rem;
+    text-decoration: none;
+    color: black;
+}
+#again{
+    padding-top:50px
+}
