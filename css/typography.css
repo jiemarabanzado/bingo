@@ -1,7 +1,10 @@
 #title{
     font-size: 3rem;
+    padding-top: 10px;
 }
-
+#img{
+    width: 300px;
+}
 .num-players{
     list-style: none;
     margin: 10px;

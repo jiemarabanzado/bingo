@@ -11,7 +11,7 @@
     margin: auto;
 }
 header{
-    margin-bottom: 50px;
+    margin-bottom: 30px;
 }
 .ms-row{
     display: flex;
@@ -52,8 +52,7 @@ header{
     margin: auto;
     flex-wrap: wrap;
     justify-content: space-between;
-    display: flex;
-    
+    display: flex;   
 }
 /*player 3*/
 #p3-card,#p3-4-card{
@@ -62,8 +61,7 @@ header{
     margin: auto;
     flex-wrap: wrap;
     justify-content: space-between;
-    display: flex;
-  
+    display: flex; 
 }
 /*player 4*/
 #p4-card{
@@ -78,7 +76,7 @@ header{
 .p1,.p2,.p3,.p4{
     margin-bottom: 30px;
     border-radius: 10px;
-}
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;}
 #num-table{
     max-width: 700px;
     display: flex;
@@ -88,7 +86,7 @@ header{
     padding-bottom: 0px;
     margin-bottom: 20px;
     border-radius: 5px;
-}
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;}
 .cpu-number{
     width: calc(100%/10 - 5px);
     height: 30px;
@@ -112,6 +110,7 @@ header{
     font-size: 4rem;
     text-align: center;
     flex-grow: 1;
+    color: goldenrod;
 }
 .last{
     margin-right: 10px;
