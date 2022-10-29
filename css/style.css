@@ -111,7 +111,32 @@ header{
 #last-number{
     font-size: 4rem;
     text-align: center;
+    flex-grow: 1;
 }
 .last{
     margin-right: 10px;
+    display: flex;
+    flex-direction: column;
+}
+#extract-btn{
+    text-align: center;
+}
+#extract{
+    font-size: 1.2rem;
+    text-decoration: none;
+    width: 200px;
+    padding: 5px;
+    border: 1px solid lightgray;
+}
+#extract:hover{
+    background-color: lightgray;
+}
+#winner{
+    text-align: center;
+    display:none;
+}
+#who{
+    font-size: 4rem;
+    color:goldenrod;
+    padding-top: 50px;
 }

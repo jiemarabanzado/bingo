@@ -29,7 +29,7 @@ button:hover{
     background-color: white;
 }
 .p2{
-    background-color: lightblue;
+    background-color:#fff1a9;
 }
 /*player 3*/
 .Number3{
@@ -37,7 +37,7 @@ button:hover{
     background-color: white;
 }
 .p3{
-    background-color: lightblue;
+    background-color:#99ff66;
 }
 /*player 4*/
 .Number4{
@@ -45,7 +45,7 @@ button:hover{
     background-color: white;
 }
 .p4{
-    background-color: lightblue;
+    background-color: #ff3366;
 }
 #chose-name1{
     background-color: transparent;
@@ -61,8 +61,17 @@ button:hover{
 .checked{
     background-color: bisque;
 }
-.had{
+.had1{
     background-color: lightblue;
+}
+.had2{
+    background-color:#fff1a9;
+}
+.had3{
+    background-color: #99ff66;;
+}
+.had4{
+    background-color: #ff3366;
 }
 #chose-name1, #chose-name1-2, #chose-name1-3, #chose-name1-4,
 #chose-name2, #chose-name3, #chose-name4, #chose-name2-3,

@@ -255,7 +255,7 @@ document.getElementById('extract').addEventListener('click', function () {
 
             for (let index = 0; index < check1.length; index++) {
                 if (a == check1[index].innerHTML) {
-                    check1[index].classList.add('had');
+                    check1[index].classList.add('had1');
                     status1+=1;
                     console.log('status 1',status1);
                     
@@ -264,7 +264,7 @@ document.getElementById('extract').addEventListener('click', function () {
 
             for (let index = 0; index < check2.length; index++) {
                 if (a == check2[index].innerHTML) {
-                    check2[index].classList.add('had');
+                    check2[index].classList.add('had2');
                     status2+=1;
                     console.log('status 2',status2);   
                 }
@@ -272,7 +272,7 @@ document.getElementById('extract').addEventListener('click', function () {
 
             for (let index = 0; index < check3.length; index++) {
                 if (a == check3[index].innerHTML) {
-                    check3[index].classList.add('had');
+                    check3[index].classList.add('had3');
                     status3+=1;
                     console.log('status 3',status3);   
                 }
@@ -280,7 +280,7 @@ document.getElementById('extract').addEventListener('click', function () {
 
             for (let index = 0; index < check4.length; index++) {
                 if (a == check4[index].innerHTML) {
-                    check4[index].classList.add('had');
+                    check4[index].classList.add('had4');
                     status4+=1;
                     console.log('status 4',status4);
                 }
@@ -325,8 +325,11 @@ document.getElementById('extract').addEventListener('click', function () {
         }
     }
     if(status1==10||status2==10||status3==10||status4==10){
-        //document.getElementById('player-cards').style.display='none';
+        document.getElementById('player-cards').style.display='none';
+        document.getElementById('extract').style.display='none';
+        document.getElementById('cpu').style.display='none';
         console.log(winner);
-        alert(winner);
+        document.getElementById('winner').style.display='block';
+        document.getElementById('who').innerHTML=winner;
     }
 })
