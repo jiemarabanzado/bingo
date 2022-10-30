@@ -13,14 +13,12 @@ let isNew=true
 document.getElementById('gen1-btn').addEventListener('click',function(){
     let ControlNew1=[];
     let cambia=document.querySelectorAll('.Number1');
-    console.log(cambia);
     for (let index = 0; index< cambia.length; index++) {
         isNew=true;
         if(index==0){
             Change=parseInt(Math.random() * (51 - 1) + 1);
             cambia[index].innerHTML=Change;
             ControlNew1.push(Change);
-            console.log(ControlNew1);
         }else{
             while(isNew){
                 Change=parseInt(Math.random() * (51 - 1) + 1);
@@ -29,7 +27,6 @@ document.getElementById('gen1-btn').addEventListener('click',function(){
                 }else{
                     cambia[index].innerHTML=Change;
                     ControlNew1.push(Change);
-                    console.log(ControlNew1)
                     isNew=false;
                 }       
             }
@@ -39,14 +36,12 @@ document.getElementById('gen1-btn').addEventListener('click',function(){
 document.getElementById('gen1-2-btn').addEventListener('click',function(){
     let ControlNew1=[];
     let cambia=document.querySelectorAll('.Number1');
-    console.log(cambia);
     for (let index = 0; index< cambia.length; index++) {
         isNew=true;
         if(index==0){
             Change=parseInt(Math.random() * (51 - 1) + 1);
             cambia[index].innerHTML=Change;
             ControlNew1.push(Change);
-            console.log(ControlNew1);
         }else{
             while(isNew){
                 Change=parseInt(Math.random() * (51 - 1) + 1);
@@ -55,7 +50,6 @@ document.getElementById('gen1-2-btn').addEventListener('click',function(){
                 }else{
                     cambia[index].innerHTML=Change;
                     ControlNew1.push(Change);
-                    console.log(ControlNew1)
                     isNew=false;
                 }       
             }
@@ -65,14 +59,12 @@ document.getElementById('gen1-2-btn').addEventListener('click',function(){
 document.getElementById('gen1-3-btn').addEventListener('click',function(){
     let ControlNew1=[];
     let cambia=document.querySelectorAll('.Number1');
-    console.log(cambia);
     for (let index = 0; index< cambia.length; index++) {
         isNew=true;
         if(index==0){
             Change=parseInt(Math.random() * (51 - 1) + 1);
             cambia[index].innerHTML=Change;
             ControlNew1.push(Change);
-            console.log(ControlNew1);
         }else{
             while(isNew){
                 Change=parseInt(Math.random() * (51 - 1) + 1);
@@ -81,7 +73,6 @@ document.getElementById('gen1-3-btn').addEventListener('click',function(){
                 }else{
                     cambia[index].innerHTML=Change;
                     ControlNew1.push(Change);
-                    console.log(ControlNew1)
                     isNew=false;
                 }       
             }
@@ -91,14 +82,12 @@ document.getElementById('gen1-3-btn').addEventListener('click',function(){
 document.getElementById('gen1-4-btn').addEventListener('click',function(){
     let ControlNew1=[];
     let cambia=document.querySelectorAll('.Number1');
-    console.log(cambia);
     for (let index = 0; index< cambia.length; index++) {
         isNew=true;
         if(index==0){
             Change=parseInt(Math.random() * (51 - 1) + 1);
             cambia[index].innerHTML=Change;
             ControlNew1.push(Change);
-            console.log(ControlNew1);
         }else{
             while(isNew){
                 Change=parseInt(Math.random() * (51 - 1) + 1);
@@ -107,7 +96,6 @@ document.getElementById('gen1-4-btn').addEventListener('click',function(){
                 }else{
                     cambia[index].innerHTML=Change;
                     ControlNew1.push(Change);
-                    console.log(ControlNew1)
                     isNew=false;
                 }       
             }
@@ -125,7 +113,6 @@ document.getElementById('gen2-btn').addEventListener('click',function(){
             Change=parseInt(Math.random() * (51 - 1) + 1);
             cambia[index].innerHTML=Change;
             ControlNew1.push(Change);
-            console.log(ControlNew1);
         }else{
             while(isNew){
                 Change=parseInt(Math.random() * (51 - 1) + 1);
@@ -134,7 +121,6 @@ document.getElementById('gen2-btn').addEventListener('click',function(){
                 }else{
                     cambia[index].innerHTML=Change;
                     ControlNew1.push(Change);
-                    console.log(ControlNew1)
                     isNew=false;
                 }       
             }
@@ -144,14 +130,12 @@ document.getElementById('gen2-btn').addEventListener('click',function(){
 document.getElementById('gen2-3-btn').addEventListener('click',function(){
     let ControlNew1=[];
     let cambia=document.querySelectorAll('.Number2');
-    console.log(cambia);
     for (let index = 0; index< cambia.length; index++) {
         isNew=true;
         if(index==0){
             Change=parseInt(Math.random() * (51 - 1) + 1);
             cambia[index].innerHTML=Change;
             ControlNew1.push(Change);
-            console.log(ControlNew1);
         }else{
             while(isNew){
                 Change=parseInt(Math.random() * (51 - 1) + 1);
@@ -160,7 +144,6 @@ document.getElementById('gen2-3-btn').addEventListener('click',function(){
                 }else{
                     cambia[index].innerHTML=Change;
                     ControlNew1.push(Change);
-                    console.log(ControlNew1)
                     isNew=false;
                 }       
             }
@@ -170,14 +153,12 @@ document.getElementById('gen2-3-btn').addEventListener('click',function(){
 document.getElementById('gen2-4-btn').addEventListener('click',function(){
     let ControlNew1=[];
     let cambia=document.querySelectorAll('.Number2');
-    console.log(cambia);
     for (let index = 0; index< cambia.length; index++) {
         isNew=true;
         if(index==0){
             Change=parseInt(Math.random() * (51 - 1) + 1);
             cambia[index].innerHTML=Change;
             ControlNew1.push(Change);
-            console.log(ControlNew1);
         }else{
             while(isNew){
                 Change=parseInt(Math.random() * (51 - 1) + 1);
@@ -186,7 +167,6 @@ document.getElementById('gen2-4-btn').addEventListener('click',function(){
                 }else{
                     cambia[index].innerHTML=Change;
                     ControlNew1.push(Change);
-                    console.log(ControlNew1)
                     isNew=false;
                 }       
             }
@@ -197,14 +177,12 @@ document.getElementById('gen2-4-btn').addEventListener('click',function(){
 document.getElementById('gen3-btn').addEventListener('click',function(){
     let ControlNew1=[];
     let cambia=document.querySelectorAll('.Number3');
-    console.log(cambia);
     for (let index = 0; index< cambia.length; index++) {
         isNew=true;
         if(index==0){
             Change=parseInt(Math.random() * (51 - 1) + 1);
             cambia[index].innerHTML=Change;
             ControlNew1.push(Change);
-            console.log(ControlNew1);
         }else{
             while(isNew){
                 Change=parseInt(Math.random() * (51 - 1) + 1);
@@ -213,7 +191,6 @@ document.getElementById('gen3-btn').addEventListener('click',function(){
                 }else{
                     cambia[index].innerHTML=Change;
                     ControlNew1.push(Change);
-                    console.log(ControlNew1)
                     isNew=false;
                 }       
             }
@@ -223,14 +200,12 @@ document.getElementById('gen3-btn').addEventListener('click',function(){
 document.getElementById('gen3-4-btn').addEventListener('click',function(){
     let ControlNew1=[];
     let cambia=document.querySelectorAll('.Number3');
-    console.log(cambia);
     for (let index = 0; index< cambia.length; index++) {
         isNew=true;
         if(index==0){
             Change=parseInt(Math.random() * (51 - 1) + 1);
             cambia[index].innerHTML=Change;
             ControlNew1.push(Change);
-            console.log(ControlNew1);
         }else{
             while(isNew){
                 Change=parseInt(Math.random() * (51 - 1) + 1);
@@ -239,7 +214,6 @@ document.getElementById('gen3-4-btn').addEventListener('click',function(){
                 }else{
                     cambia[index].innerHTML=Change;
                     ControlNew1.push(Change);
-                    console.log(ControlNew1)
                     isNew=false;
                 }       
             }
@@ -250,14 +224,12 @@ document.getElementById('gen3-4-btn').addEventListener('click',function(){
 document.getElementById('gen4-btn').addEventListener('click',function(){
     let ControlNew1=[];
     let cambia=document.querySelectorAll('.Number4');
-    console.log(cambia);
     for (let index = 0; index< cambia.length; index++) {
         isNew=true;
         if(index==0){
             Change=parseInt(Math.random() * (51 - 1) + 1);
             cambia[index].innerHTML=Change;
             ControlNew1.push(Change);
-            console.log(ControlNew1);
         }else{
             while(isNew){
                 Change=parseInt(Math.random() * (51 - 1) + 1);
@@ -266,7 +238,6 @@ document.getElementById('gen4-btn').addEventListener('click',function(){
                 }else{
                     cambia[index].innerHTML=Change;
                     ControlNew1.push(Change);
-                    console.log(ControlNew1)
                     isNew=false;
                 }       
             }
@@ -558,7 +529,6 @@ document.getElementById('extract').addEventListener('click', function () {
     let check3 = document.querySelectorAll('.Number3');
     let check4 = document.querySelectorAll('.Number4');  
     let Here = true;
-    console.log(GameSelected);
     while (Here) {
         const a = parseInt(Math.random() * (51 - 1) + 1);
         if (TableCount.includes(a) == false) {
@@ -567,76 +537,57 @@ document.getElementById('extract').addEventListener('click', function () {
             Here = false;
             for (let index = 0; index < compare.length; index++) {
                 if (a == compare[index].innerHTML) {
-                    compare[index].classList.add('checked');
-                     
+                    compare[index].classList.add('checked');    
                 }
             }
-
             for (let index = 0; index < check1.length; index++) {
                 if (a == check1[index].innerHTML) {
                     check1[index].classList.add('had1');
-                    status1+=1;
-                    console.log('status 1',status1);
-                    
+                    status1+=1;       
                 }
             }
-
             for (let index = 0; index < check2.length; index++) {
                 if (a == check2[index].innerHTML) {
                     check2[index].classList.add('had2');
-                    status2+=1;
-                    console.log('status 2',status2);   
+                    status2+=1;      
                 }
             }
-
             for (let index = 0; index < check3.length; index++) {
                 if (a == check3[index].innerHTML) {
                     check3[index].classList.add('had3');
-                    status3+=1;
-                    console.log('status 3',status3);   
+                    status3+=1;      
                 }
             }
-
             for (let index = 0; index < check4.length; index++) {
                 if (a == check4[index].innerHTML) {
                     check4[index].classList.add('had4');
                     status4+=1;
-                    console.log('status 4',status4);
                 }
             }
         }
     }if(status1==10){
         if(GameSelected==1){
             winner=document.getElementById('p1-name').innerHTML;
-  
         }else if(GameSelected==2){
             winner=document.getElementById('p1-2-name').innerHTML;
-
         }else if(GameSelected==3){
             winner=document.getElementById('p1-3-name').innerHTML;
-
         }else if(GameSelected==4){
             winner=document.getElementById('p1-4-name').innerHTML;
-
         }
     }else if(status2==10){
         if(GameSelected==2){
             winner=document.getElementById('p2-name').innerHTML;
-
         }else if(GameSelected==3){
             winner=document.getElementById('p2-3name').innerHTML;
-
         }else if(GameSelected==4){
             winner=document.getElementById('p2-4-name').innerHTML;
-  
         }
     }else if(status3==10){
         if(GameSelected==3){
             winner=document.getElementById('p3-name').innerHTML;
-
         }else if(GameSelected==4){
             winner=document.getElementById('p3-4-name').innerHTML;
-
         }
     }else if(status4==10){
         if(GameSelected==4){
@@ -647,7 +598,6 @@ document.getElementById('extract').addEventListener('click', function () {
         document.getElementById('player-cards').style.display='none';
         document.getElementById('extract').style.display='none';
         document.getElementById('cpu').style.display='none';
-        console.log(winner);
         document.getElementById('winner').style.display='block';
         document.getElementById('who').innerHTML=winner;
     }
