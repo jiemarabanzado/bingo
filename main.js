@@ -522,6 +522,7 @@ let status1=0;
 let status2=0;
 let status3=0;
 let status4=0;
+let winners=0
 document.getElementById('extract').addEventListener('click', function () {
     let compare = document.querySelectorAll('.cpu-number');
     let check1 = document.querySelectorAll('.Number1');
@@ -565,6 +566,18 @@ document.getElementById('extract').addEventListener('click', function () {
                 }
             }
         }
+    if(status1==10){
+        winners+=1;
+    }
+    if(status2==10){
+        winners+=1;
+    }
+    if(status3==10){
+        winners+=1;
+    }
+    if(status4==10){
+        winners+=1;
+    }
     }if(status1==10){
         if(GameSelected==1){
             winner=document.getElementById('p1-name').innerHTML;
@@ -594,11 +607,19 @@ document.getElementById('extract').addEventListener('click', function () {
             winner=document.getElementById('p4-name').innerHTML;
         }
     }
-    if(status1==10||status2==10||status3==10||status4==10){
+    if(winners>1){
         document.getElementById('player-cards').style.display='none';
         document.getElementById('extract').style.display='none';
         document.getElementById('cpu').style.display='none';
         document.getElementById('winner').style.display='block';
-        document.getElementById('who').innerHTML=winner;
-    }
+        document.getElementById('who').innerHTML='pareggio';
+    }else if(status1==10||status2==10||status3==10||status4==10){
+            document.getElementById('player-cards').style.display='none';
+            document.getElementById('extract').style.display='none';
+            document.getElementById('cpu').style.display='none';
+            document.getElementById('winner').style.display='block';
+            document.getElementById('who').innerHTML=winner;
+            document.getElementById('result').innerHTML='Hai Vinto!';
+        }
 })
+    
