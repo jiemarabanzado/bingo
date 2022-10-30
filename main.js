@@ -518,28 +518,28 @@ document.getElementById('begin').addEventListener('click', function () {
             document.getElementById('cpu').style.display = 'block';
             document.getElementById('begin').style.display = 'none';
         }else{
-            alert('inserisci nome o conferma la carta');
+            alert('inserisci nome e conferma la carta');
         }
     }else if(GameSelected==2){
         if(NomeScelto12==1 && NomeScelto2==1&&CardChose12==1&&CardChose2==1){
             document.getElementById('cpu').style.display = 'block';
             document.getElementById('begin').style.display = 'none';
         }else{
-            alert('inserisci nome o conferma la carta');
+            alert('inserisci nome e conferma la carta');
         }
     }else if(GameSelected==3){
         if(NomeScelto13==1&&NomeScelto23==1&&NomeScelto3==1&&CardChose13==1&&CardChose23==1&&CardChose3==1){
             document.getElementById('cpu').style.display = 'block';
             document.getElementById('begin').style.display = 'none';
         }else{
-            alert('inserisci nome o conferma la carta');
+            alert('inserisci nome e conferma la carta');
         }
     }else if(GameSelected==4){
         if(NomeScelto14==1&&NomeScelto24==1&&NomeScelto34==1&&NomeScelto4==1&&CardChose4==1&&CardChose14==1&&CardChose24==1&&CardChose34==1){
             document.getElementById('cpu').style.display = 'block';
             document.getElementById('begin').style.display = 'none';
         }else{
-            alert('inserisci nome o conferma la carta');
+            alert('inserisci nome e conferma la carta');
         }
     }     
 })
