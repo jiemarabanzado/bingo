@@ -5,11 +5,11 @@ const card4 = [8, 1, 12, 19, 24, 25, 34, 35, 49, 50];
 let active = document.querySelectorAll('.n-players');
 let GameSelected=0;
 //creazione cards random
-//1 player
+//player 1
 let new1;
 let cambia;
 let Change;
-let isNew=true //parseInt(Math.random() * (51 - 1) + 1);
+let isNew=true 
 document.getElementById('gen1-btn').addEventListener('click',function(){
     let ControlNew1=[];
     let cambia=document.querySelectorAll('.Number1');
@@ -36,13 +36,243 @@ document.getElementById('gen1-btn').addEventListener('click',function(){
         }       
     }
 })
-
+document.getElementById('gen1-2-btn').addEventListener('click',function(){
+    let ControlNew1=[];
+    let cambia=document.querySelectorAll('.Number1');
+    console.log(cambia);
+    for (let index = 0; index< cambia.length; index++) {
+        isNew=true;
+        if(index==0){
+            Change=parseInt(Math.random() * (51 - 1) + 1);
+            cambia[index].innerHTML=Change;
+            ControlNew1.push(Change);
+            console.log(ControlNew1);
+        }else{
+            while(isNew){
+                Change=parseInt(Math.random() * (51 - 1) + 1);
+                if(ControlNew1.includes(Change)){
+                    isNew=true
+                }else{
+                    cambia[index].innerHTML=Change;
+                    ControlNew1.push(Change);
+                    console.log(ControlNew1)
+                    isNew=false;
+                }       
+            }
+        }       
+    }
+})
+document.getElementById('gen1-3-btn').addEventListener('click',function(){
+    let ControlNew1=[];
+    let cambia=document.querySelectorAll('.Number1');
+    console.log(cambia);
+    for (let index = 0; index< cambia.length; index++) {
+        isNew=true;
+        if(index==0){
+            Change=parseInt(Math.random() * (51 - 1) + 1);
+            cambia[index].innerHTML=Change;
+            ControlNew1.push(Change);
+            console.log(ControlNew1);
+        }else{
+            while(isNew){
+                Change=parseInt(Math.random() * (51 - 1) + 1);
+                if(ControlNew1.includes(Change)){
+                    isNew=true
+                }else{
+                    cambia[index].innerHTML=Change;
+                    ControlNew1.push(Change);
+                    console.log(ControlNew1)
+                    isNew=false;
+                }       
+            }
+        }       
+    }
+})
+document.getElementById('gen1-4-btn').addEventListener('click',function(){
+    let ControlNew1=[];
+    let cambia=document.querySelectorAll('.Number1');
+    console.log(cambia);
+    for (let index = 0; index< cambia.length; index++) {
+        isNew=true;
+        if(index==0){
+            Change=parseInt(Math.random() * (51 - 1) + 1);
+            cambia[index].innerHTML=Change;
+            ControlNew1.push(Change);
+            console.log(ControlNew1);
+        }else{
+            while(isNew){
+                Change=parseInt(Math.random() * (51 - 1) + 1);
+                if(ControlNew1.includes(Change)){
+                    isNew=true
+                }else{
+                    cambia[index].innerHTML=Change;
+                    ControlNew1.push(Change);
+                    console.log(ControlNew1)
+                    isNew=false;
+                }       
+            }
+        }       
+    }
+})
 //2player
-
+document.getElementById('gen2-btn').addEventListener('click',function(){
+    let ControlNew1=[];
+    let cambia=document.querySelectorAll('.Number2');
+    console.log(cambia);
+    for (let index = 0; index< cambia.length; index++) {
+        isNew=true;
+        if(index==0){
+            Change=parseInt(Math.random() * (51 - 1) + 1);
+            cambia[index].innerHTML=Change;
+            ControlNew1.push(Change);
+            console.log(ControlNew1);
+        }else{
+            while(isNew){
+                Change=parseInt(Math.random() * (51 - 1) + 1);
+                if(ControlNew1.includes(Change)){
+                    isNew=true
+                }else{
+                    cambia[index].innerHTML=Change;
+                    ControlNew1.push(Change);
+                    console.log(ControlNew1)
+                    isNew=false;
+                }       
+            }
+        }       
+    }
+})
+document.getElementById('gen2-3-btn').addEventListener('click',function(){
+    let ControlNew1=[];
+    let cambia=document.querySelectorAll('.Number2');
+    console.log(cambia);
+    for (let index = 0; index< cambia.length; index++) {
+        isNew=true;
+        if(index==0){
+            Change=parseInt(Math.random() * (51 - 1) + 1);
+            cambia[index].innerHTML=Change;
+            ControlNew1.push(Change);
+            console.log(ControlNew1);
+        }else{
+            while(isNew){
+                Change=parseInt(Math.random() * (51 - 1) + 1);
+                if(ControlNew1.includes(Change)){
+                    isNew=true
+                }else{
+                    cambia[index].innerHTML=Change;
+                    ControlNew1.push(Change);
+                    console.log(ControlNew1)
+                    isNew=false;
+                }       
+            }
+        }       
+    }
+})
+document.getElementById('gen2-4-btn').addEventListener('click',function(){
+    let ControlNew1=[];
+    let cambia=document.querySelectorAll('.Number2');
+    console.log(cambia);
+    for (let index = 0; index< cambia.length; index++) {
+        isNew=true;
+        if(index==0){
+            Change=parseInt(Math.random() * (51 - 1) + 1);
+            cambia[index].innerHTML=Change;
+            ControlNew1.push(Change);
+            console.log(ControlNew1);
+        }else{
+            while(isNew){
+                Change=parseInt(Math.random() * (51 - 1) + 1);
+                if(ControlNew1.includes(Change)){
+                    isNew=true
+                }else{
+                    cambia[index].innerHTML=Change;
+                    ControlNew1.push(Change);
+                    console.log(ControlNew1)
+                    isNew=false;
+                }       
+            }
+        }       
+    }
+})
 //3player
-
+document.getElementById('gen3-btn').addEventListener('click',function(){
+    let ControlNew1=[];
+    let cambia=document.querySelectorAll('.Number3');
+    console.log(cambia);
+    for (let index = 0; index< cambia.length; index++) {
+        isNew=true;
+        if(index==0){
+            Change=parseInt(Math.random() * (51 - 1) + 1);
+            cambia[index].innerHTML=Change;
+            ControlNew1.push(Change);
+            console.log(ControlNew1);
+        }else{
+            while(isNew){
+                Change=parseInt(Math.random() * (51 - 1) + 1);
+                if(ControlNew1.includes(Change)){
+                    isNew=true
+                }else{
+                    cambia[index].innerHTML=Change;
+                    ControlNew1.push(Change);
+                    console.log(ControlNew1)
+                    isNew=false;
+                }       
+            }
+        }       
+    }
+})
+document.getElementById('gen3-4-btn').addEventListener('click',function(){
+    let ControlNew1=[];
+    let cambia=document.querySelectorAll('.Number3');
+    console.log(cambia);
+    for (let index = 0; index< cambia.length; index++) {
+        isNew=true;
+        if(index==0){
+            Change=parseInt(Math.random() * (51 - 1) + 1);
+            cambia[index].innerHTML=Change;
+            ControlNew1.push(Change);
+            console.log(ControlNew1);
+        }else{
+            while(isNew){
+                Change=parseInt(Math.random() * (51 - 1) + 1);
+                if(ControlNew1.includes(Change)){
+                    isNew=true
+                }else{
+                    cambia[index].innerHTML=Change;
+                    ControlNew1.push(Change);
+                    console.log(ControlNew1)
+                    isNew=false;
+                }       
+            }
+        }       
+    }
+})
 //4player
-
+document.getElementById('gen4-btn').addEventListener('click',function(){
+    let ControlNew1=[];
+    let cambia=document.querySelectorAll('.Number4');
+    console.log(cambia);
+    for (let index = 0; index< cambia.length; index++) {
+        isNew=true;
+        if(index==0){
+            Change=parseInt(Math.random() * (51 - 1) + 1);
+            cambia[index].innerHTML=Change;
+            ControlNew1.push(Change);
+            console.log(ControlNew1);
+        }else{
+            while(isNew){
+                Change=parseInt(Math.random() * (51 - 1) + 1);
+                if(ControlNew1.includes(Change)){
+                    isNew=true
+                }else{
+                    cambia[index].innerHTML=Change;
+                    ControlNew1.push(Change);
+                    console.log(ControlNew1)
+                    isNew=false;
+                }       
+            }
+        }       
+    }
+})
 
 
 //scelta del numero partecipanti
@@ -110,6 +340,67 @@ let NomeScelto24=0;
 let NomeScelto3=0;
 let NomeScelto34=0;
 let NomeScelto4=0;
+let CardChose1=0;
+let CardChose12=0;
+let CardChose13=0;
+let CardChose14=0;
+let CardChose2=0;
+let CardChose23=0;
+let CardChose24=0;
+let CardChose3=0;
+let CardChose34=0;
+let CardChose4=0;
+//conferma delle carte
+document.getElementById('confirmC1').addEventListener('click',function(){
+    CardChose1=1;
+    document.getElementById('confirmC1').style.display='none';
+    document.getElementById('gen1-btn').style.display='none';
+})
+document.getElementById('confirmC1-2').addEventListener('click',function(){
+    CardChose12=1;
+    document.getElementById('confirmC1-2').style.display='none';
+    document.getElementById('gen1-2-btn').style.display='none';
+})
+document.getElementById('confirmC1-3').addEventListener('click',function(){
+    CardChose13=1;
+    document.getElementById('confirmC1-3').style.display='none';
+    document.getElementById('gen1-3-btn').style.display='none';
+})
+document.getElementById('confirmC1-4').addEventListener('click',function(){
+    CardChose14=1;
+    document.getElementById('confirmC1-4').style.display='none';
+    document.getElementById('gen1-4-btn').style.display='none';
+})
+document.getElementById('confirmC2').addEventListener('click',function(){
+    CardChose2=1;
+    document.getElementById('confirmC2').style.display='none';
+    document.getElementById('gen2-btn').style.display='none';
+})
+document.getElementById('confirmC2-3').addEventListener('click',function(){
+    CardChose23=1;
+    document.getElementById('confirmC2-3').style.display='none';
+    document.getElementById('gen2-3-btn').style.display='none';
+})
+document.getElementById('confirmC2-4').addEventListener('click',function(){
+    CardChose24=1;
+    document.getElementById('confirmC2-4').style.display='none';
+    document.getElementById('gen2-4-btn').style.display='none';
+})
+document.getElementById('confirmC3').addEventListener('click',function(){
+    CardChose3=1;
+    document.getElementById('confirmC3').style.display='none';
+    document.getElementById('gen3-btn').style.display='none';
+})
+document.getElementById('confirmC3-4').addEventListener('click',function(){
+    CardChose34=1;
+    document.getElementById('confirmC3-4').style.display='none';
+    document.getElementById('gen3-4-btn').style.display='none';
+})
+document.getElementById('confirmC4').addEventListener('click',function(){
+    CardChose4=1;
+    document.getElementById('confirmC4').style.display='none';
+    document.getElementById('gen4-btn').style.display='none';
+})
 //scelta nomi
 //one player
 document.getElementById('chose-name1').addEventListener('click', function () {
@@ -223,32 +514,32 @@ for (let index = 0; index < 50; index++) {
 //controllo inizio partita
 document.getElementById('begin').addEventListener('click', function () {
     if(GameSelected==1){
-        if(NomeScelto1==0){
-            alert('inserisci nome');
-        }else{
+        if(NomeScelto1==1&&CardChose1==1){
             document.getElementById('cpu').style.display = 'block';
             document.getElementById('begin').style.display = 'none';
+        }else{
+            alert('inserisci nome o conferma la carta');
         }
     }else if(GameSelected==2){
-        if(NomeScelto12==1 && NomeScelto2==1){
+        if(NomeScelto12==1 && NomeScelto2==1&&CardChose12==1&&CardChose2==1){
             document.getElementById('cpu').style.display = 'block';
             document.getElementById('begin').style.display = 'none';
         }else{
-            alert('inserisci nome');
+            alert('inserisci nome o conferma la carta');
         }
     }else if(GameSelected==3){
-        if(NomeScelto13==1&&NomeScelto23==1&&NomeScelto3==1){
+        if(NomeScelto13==1&&NomeScelto23==1&&NomeScelto3==1&&CardChose13==1&&CardChose23==1&&CardChose3==1){
             document.getElementById('cpu').style.display = 'block';
             document.getElementById('begin').style.display = 'none';
         }else{
-            alert('inserisci nome');
+            alert('inserisci nome o conferma la carta');
         }
     }else if(GameSelected==4){
-        if(NomeScelto14==1&&NomeScelto24==1&&NomeScelto34==1&&NomeScelto4==1){
+        if(NomeScelto14==1&&NomeScelto24==1&&NomeScelto34==1&&NomeScelto4==1&&CardChose4==1&&CardChose14==1&&CardChose24==1&&CardChose34==1){
             document.getElementById('cpu').style.display = 'block';
             document.getElementById('begin').style.display = 'none';
         }else{
-            alert('inserisci nome');
+            alert('inserisci nome o conferma la carta');
         }
     }  
     
