@@ -541,9 +541,7 @@ document.getElementById('begin').addEventListener('click', function () {
         }else{
             alert('inserisci nome o conferma la carta');
         }
-    }  
-    
-    
+    }     
 })
 let winner;
 //sistema conteggio numeri

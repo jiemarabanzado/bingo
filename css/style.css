@@ -147,3 +147,6 @@ header{
 #again{
     padding-top:50px
 }
+#gen1-btn,#gen1-2-btn,#gen1-3-btn,#gen1-4-btn,#gen2-btn,#gen2-3-btn,#gen2-4-btn,#gen3-btn,#gen3-4-btn,#gen4-btn{
+    margin-right: 20px;
+}
