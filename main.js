@@ -139,6 +139,9 @@ document.getElementById('play1').addEventListener('click', function () {
     for (let index = 0; index < card1.length; index++) {
         document.getElementById('p1-card').innerHTML += `<div class="Number1">${card1[index]}</div>`;
     }
+    for (let index = 0; index < card2.length; index++) {
+        document.getElementById('Cpu-card').innerHTML += `<div class="Number2">${card2[index]}</div>`;
+    }
 })
 document.getElementById('play2').addEventListener('click', function () {
     active[1].classList.add('active');
@@ -474,7 +477,9 @@ document.getElementById('extract').addEventListener('click', function () {
             winner=document.getElementById('p1-4-name').innerHTML;
         }
     }else if(status2==10){
-        if(GameSelected==2){
+        if(GameSelected==1){
+            winner='Cpu';
+        }else if(GameSelected==2){
             winner=document.getElementById('p2-name').innerHTML;
         }else if(GameSelected==3){
             winner=document.getElementById('p2-3name').innerHTML;
@@ -504,7 +509,11 @@ document.getElementById('extract').addEventListener('click', function () {
             document.getElementById('cpu').style.display='none';
             document.getElementById('winner').style.display='block';
             document.getElementById('who').innerHTML=winner;
-            document.getElementById('result').innerHTML='Hai Vinto!';
+            if(winner=='Cpu'){
+                document.getElementById('result').innerHTML='Hai Perso!';
+            } else{
+                document.getElementById('result').innerHTML='Hai Vinto!';}
+           
         }
 })
     

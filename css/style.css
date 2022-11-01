@@ -31,7 +31,7 @@ header{
     flex-wrap: wrap;
 }
 /*player 1*/
-#p1-card,#p1-2-card,#p1-3-card,#p1-4-card{
+#p1-card,#p1-2-card,#p1-3-card,#p1-4-card,#Cpu-card{
     max-width: 400px;
     padding: 5px;
     margin: auto;
