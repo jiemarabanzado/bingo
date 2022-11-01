@@ -2,15 +2,14 @@ const card1 = [5, 4, 13, 17, 21, 28, 31, 37, 42, 47];
 const card2 = [2, 3, 11, 15, 22, 27, 32, 38, 43, 41];
 const card3 = [7, 6, 16, 14, 23, 26, 33, 36, 44, 48];
 const card4 = [8, 1, 12, 19, 24, 25, 34, 35, 49, 50];
-let active = document.querySelectorAll('.n-players');
-let GameSelected=0;
 //creazione cards random
 //player 1
 let new1;
 let cambia;
 let Change;
 let isNew=true 
-document.getElementById('gen1-btn').addEventListener('click',function(){
+
+function Gen1(){
     let ControlNew1=[];
     let cambia=document.querySelectorAll('.Number1');
     for (let index = 0; index< cambia.length; index++) {
@@ -32,78 +31,18 @@ document.getElementById('gen1-btn').addEventListener('click',function(){
             }
         }       
     }
-})
-document.getElementById('gen1-2-btn').addEventListener('click',function(){
-    let ControlNew1=[];
-    let cambia=document.querySelectorAll('.Number1');
-    for (let index = 0; index< cambia.length; index++) {
-        isNew=true;
-        if(index==0){
-            Change=parseInt(Math.random() * (51 - 1) + 1);
-            cambia[index].innerHTML=Change;
-            ControlNew1.push(Change);
-        }else{
-            while(isNew){
-                Change=parseInt(Math.random() * (51 - 1) + 1);
-                if(ControlNew1.includes(Change)){
-                    isNew=true
-                }else{
-                    cambia[index].innerHTML=Change;
-                    ControlNew1.push(Change);
-                    isNew=false;
-                }       
-            }
-        }       
-    }
-})
-document.getElementById('gen1-3-btn').addEventListener('click',function(){
-    let ControlNew1=[];
-    let cambia=document.querySelectorAll('.Number1');
-    for (let index = 0; index< cambia.length; index++) {
-        isNew=true;
-        if(index==0){
-            Change=parseInt(Math.random() * (51 - 1) + 1);
-            cambia[index].innerHTML=Change;
-            ControlNew1.push(Change);
-        }else{
-            while(isNew){
-                Change=parseInt(Math.random() * (51 - 1) + 1);
-                if(ControlNew1.includes(Change)){
-                    isNew=true
-                }else{
-                    cambia[index].innerHTML=Change;
-                    ControlNew1.push(Change);
-                    isNew=false;
-                }       
-            }
-        }       
-    }
-})
-document.getElementById('gen1-4-btn').addEventListener('click',function(){
-    let ControlNew1=[];
-    let cambia=document.querySelectorAll('.Number1');
-    for (let index = 0; index< cambia.length; index++) {
-        isNew=true;
-        if(index==0){
-            Change=parseInt(Math.random() * (51 - 1) + 1);
-            cambia[index].innerHTML=Change;
-            ControlNew1.push(Change);
-        }else{
-            while(isNew){
-                Change=parseInt(Math.random() * (51 - 1) + 1);
-                if(ControlNew1.includes(Change)){
-                    isNew=true
-                }else{
-                    cambia[index].innerHTML=Change;
-                    ControlNew1.push(Change);
-                    isNew=false;
-                }       
-            }
-        }       
-    }
-})
+}
+
+document.getElementById('gen1-btn').addEventListener('click',Gen1);
+
+document.getElementById('gen1-2-btn').addEventListener('click',Gen1);
+
+document.getElementById('gen1-3-btn').addEventListener('click',Gen1);
+
+document.getElementById('gen1-4-btn').addEventListener('click',Gen1);
+    
 //2player
-document.getElementById('gen2-btn').addEventListener('click',function(){
+function Gen2(){
     let ControlNew1=[];
     let cambia=document.querySelectorAll('.Number2');
     console.log(cambia);
@@ -126,55 +65,16 @@ document.getElementById('gen2-btn').addEventListener('click',function(){
             }
         }       
     }
-})
-document.getElementById('gen2-3-btn').addEventListener('click',function(){
-    let ControlNew1=[];
-    let cambia=document.querySelectorAll('.Number2');
-    for (let index = 0; index< cambia.length; index++) {
-        isNew=true;
-        if(index==0){
-            Change=parseInt(Math.random() * (51 - 1) + 1);
-            cambia[index].innerHTML=Change;
-            ControlNew1.push(Change);
-        }else{
-            while(isNew){
-                Change=parseInt(Math.random() * (51 - 1) + 1);
-                if(ControlNew1.includes(Change)){
-                    isNew=true
-                }else{
-                    cambia[index].innerHTML=Change;
-                    ControlNew1.push(Change);
-                    isNew=false;
-                }       
-            }
-        }       
-    }
-})
-document.getElementById('gen2-4-btn').addEventListener('click',function(){
-    let ControlNew1=[];
-    let cambia=document.querySelectorAll('.Number2');
-    for (let index = 0; index< cambia.length; index++) {
-        isNew=true;
-        if(index==0){
-            Change=parseInt(Math.random() * (51 - 1) + 1);
-            cambia[index].innerHTML=Change;
-            ControlNew1.push(Change);
-        }else{
-            while(isNew){
-                Change=parseInt(Math.random() * (51 - 1) + 1);
-                if(ControlNew1.includes(Change)){
-                    isNew=true
-                }else{
-                    cambia[index].innerHTML=Change;
-                    ControlNew1.push(Change);
-                    isNew=false;
-                }       
-            }
-        }       
-    }
-})
+}
+
+document.getElementById('gen2-btn').addEventListener('click',Gen2);
+
+document.getElementById('gen2-3-btn').addEventListener('click',Gen2);
+    
+document.getElementById('gen2-4-btn').addEventListener('click',Gen2);
+
 //3player
-document.getElementById('gen3-btn').addEventListener('click',function(){
+function Gen3(){
     let ControlNew1=[];
     let cambia=document.querySelectorAll('.Number3');
     for (let index = 0; index< cambia.length; index++) {
@@ -196,30 +96,11 @@ document.getElementById('gen3-btn').addEventListener('click',function(){
             }
         }       
     }
-})
-document.getElementById('gen3-4-btn').addEventListener('click',function(){
-    let ControlNew1=[];
-    let cambia=document.querySelectorAll('.Number3');
-    for (let index = 0; index< cambia.length; index++) {
-        isNew=true;
-        if(index==0){
-            Change=parseInt(Math.random() * (51 - 1) + 1);
-            cambia[index].innerHTML=Change;
-            ControlNew1.push(Change);
-        }else{
-            while(isNew){
-                Change=parseInt(Math.random() * (51 - 1) + 1);
-                if(ControlNew1.includes(Change)){
-                    isNew=true
-                }else{
-                    cambia[index].innerHTML=Change;
-                    ControlNew1.push(Change);
-                    isNew=false;
-                }       
-            }
-        }       
-    }
-})
+}
+document.getElementById('gen3-btn').addEventListener('click',Gen3);
+
+document.getElementById('gen3-4-btn').addEventListener('click',Gen3);
+
 //4player
 document.getElementById('gen4-btn').addEventListener('click',function(){
     let ControlNew1=[];
@@ -247,6 +128,9 @@ document.getElementById('gen4-btn').addEventListener('click',function(){
 
 
 //scelta del numero partecipanti
+let active = document.querySelectorAll('.n-players');
+let GameSelected=0;
+
 document.getElementById('play1').addEventListener('click', function () {
     active[0].classList.add('active');
     GameSelected=1;
@@ -514,8 +398,8 @@ document.getElementById('begin').addEventListener('click', function () {
         }
     }     
 })
+
 let winner;
-//sistema conteggio numeri
 let TableCount = [];
 let NewNum = 0;
 let status1=0;
@@ -523,6 +407,7 @@ let status2=0;
 let status3=0;
 let status4=0;
 let winners=0
+//sistema conteggio numeri
 document.getElementById('extract').addEventListener('click', function () {
     let compare = document.querySelectorAll('.cpu-number');
     let check1 = document.querySelectorAll('.Number1');
